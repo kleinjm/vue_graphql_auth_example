@@ -1,0 +1,32 @@
+extends: ['eslint:recommended', 'plugin:vue/recommended']
+env:
+  amd: true
+  browser: true
+  es6: true
+  jquery: true
+  node: true
+globals:
+  module: true
+  Bloodhound: true
+parserOptions:
+  ecmaVersion: 6
+  sourceType: 'module'
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+rules:
+  # the leading number is the warn level (1 = warn, 2 = error)
+  semi: [1, "always"]
+  max-len: [1, { "code": 80 }]
+  quotes: [1, "single"]
+  comma-dangle: [1, "always-multiline"]
+  no-unused-vars: 1
+  vue/html-quotes: [1, "double"]
+  vue/max-attributes-per-line: [1, {
+    "singleline": 1,
+    "multiline": {
+      "max": 1,
+      "allowFirstLine": true
+    }
+    }]
+  vue/html-self-closing: "never"
+  vue/attribute-hyphenation: "never"

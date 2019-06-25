@@ -7,9 +7,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag "application" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="vg-application"></div>
   </body>
 </html>

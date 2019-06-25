@@ -1,24 +1,37 @@
-# README
+# Purpose
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+VueGraphqlAuthExample demonstrates how to use Rails, Vue, GraphQL and Devise together to create basic token authentication. The related article provides a step-by-step guide to help navigate the repo and set up auth on your application.
 
-Things you may want to cover:
+https://d.pr/i/aVeNWb
 
-* Ruby version
+# Setup
 
-* System dependencies
+Please check `.ruby-version` and `.nvmrc` to ensure you have the right versions of Ruby and Node installed and activated on your system. Then run
 
-* Configuration
+```
+bin/setup
+```
 
-* Database creation
+# Usage
 
-* Database initialization
+## Running the App
 
-* How to run the test suite
+To run the app
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+foreman start
+```
 
-* Deployment instructions
+then head to http://localhost:3000/.
 
-* ...
+## Running Tests
+
+All tests can be found in the `./spec`. Run the tests with
+
+```
+bin/rspec
+```
+
+# Contributing
+
+Any and all feedback is welcome. Please feel free to open a pull request, issue or message me directly at me@jamesmklein.com.

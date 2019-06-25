@@ -1,0 +1,32 @@
+inherit_gem:
+  jcop:
+    - .rubocop.yml
+
+AllCops:
+  Exclude:
+    - ./db/schema.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - ./**/*_spec*.rb
+    - config/routes.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*.rb
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*.rb
+
+Rails/LexicallyScopedActionFilter:
+  Exclude:
+    - app/controllers/application_controller.rb
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - find_by_gql_id
+    - find_by_gql_ids
