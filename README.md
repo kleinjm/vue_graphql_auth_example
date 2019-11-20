@@ -1,6 +1,6 @@
 # Purpose
 
-VueGraphqlAuthExample demonstrates how to use Rails, Vue, GraphQL and Devise together to create basic token authentication. The related article provides a step-by-step guide to help navigate the repo and set up auth on your application.
+VueGraphqlAuthExample demonstrates how to use Rails, Vue, GraphQL and Devise together to create basic token authentication. The [related article](https://engineering.doximity.com/articles/token-authentication-with-rails-vue-graphql-and-devise) provides a step-by-step guide to help navigate the repo and set up auth on your application.
 
 ![](demo.gif)
 
