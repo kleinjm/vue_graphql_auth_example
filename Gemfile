@@ -14,7 +14,7 @@ gem "foreman"
 gem "graphql"
 gem "jbuilder", "~> 2.5"
 gem "pg"
-gem "puma", "~> 3.11"
+gem "puma", "~> 3.12"
 gem "rails", "5.2.3"
 gem "sass-rails", "~> 5.0"
 gem "sprockets", "~> 3.7.2" # version 3.7.1 has a known vulnerability
