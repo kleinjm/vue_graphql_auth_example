@@ -12,6 +12,19 @@ Please check `.ruby-version` and `.nvmrc` to ensure you have the right versions 
 bin/setup
 ```
 
+# Docker setup
+
+If you have docker and docker-compose installed:
+
+```
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose exec web bin/rails db:create db:migrate
+
+```
+
+The app should now be running at localhost:3000
+
 # Usage
 
 ## Running the App
