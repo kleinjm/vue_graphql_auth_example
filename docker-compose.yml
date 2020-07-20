@@ -18,13 +18,13 @@ services:
   web:
     build:
       context: .
-      dockerfile: .roro/containers/web/Dockerfile
+      dockerfile: roro/containers/web/Dockerfile
     command: ["bin/rails", "s", "-b", "0.0.0.0"]
     depends_on:
       - database
     env_file:
-      - .roro/containers/web/development.env
-      - .roro/containers/database/development.env
+      - roro/containers/web/development.env
+      - roro/containers/database/development.env
     environment:
       - WEBPACKER_DEV_SERVER_HOST=webpack_dev_server
     ports:
@@ -41,7 +41,7 @@ services:
   webpack_dev_server:
     build:
       context: .
-      dockerfile: .roro/containers/web/Dockerfile
+      dockerfile: roro/containers/web/Dockerfile
     command: ["./bin/webpack-dev-server"]
     ports:
       - 3035:3035
@@ -49,8 +49,8 @@ services:
       - .:/usr/src/app
       - gem_cache:/gems
     env_file:
-      - .roro/containers/web/development.env
-      - .roro/containers/database/development.env
+      - roro/containers/web/development.env
+      - roro/containers/database/development.env
     environment:
       - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
 
@@ -60,7 +60,7 @@ services:
   database:
     image: postgres
     env_file:
-      - .roro/containers/database/development.env
+      - roro/containers/database/development.env
     volumes:
       - db_data:/var/lib/postgresql/data
 
