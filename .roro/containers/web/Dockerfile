@@ -31,7 +31,6 @@ ENV BUNDLE_PATH /gems
 RUN bundle install
 
 COPY . /usr/src/app/
-# COPY ./.roro/database.example.yml /usr/src/app/config/
-COPY /usr/src/app/.roro/database.example.yml /usr/src/app/config/
+COPY ./.roro/database.example.yml ./usr/src/app/config/
 
 ENTRYPOINT [".roro/containers/web/docker-entrypoint.sh"]
