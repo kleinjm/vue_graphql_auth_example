@@ -22,7 +22,7 @@
     "graphql": "^0.13.2",
     "graphql-tag": "^2.9.0",
     "js-cookie": "^2.2.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "node-sass": "^4.7.2",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.16",
