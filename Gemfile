@@ -24,7 +24,6 @@ gem "webpacker", "~> 4.0.7"
 
 group :development do
   gem "graphiql-rails"
-  gem "jcop", "~> 0.2.4", git: "https://github.com/kleinjm/jcop"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "pry"
   gem "pry-nav"
