@@ -22,7 +22,7 @@ To run the app
 foreman start
 ```
 
-then head to http://localhost:3000/.
+then head to http://localhost:5000/.
 
 ## Running Tests
 
