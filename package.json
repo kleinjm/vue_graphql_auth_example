@@ -23,7 +23,7 @@
     "graphql-tag": "^2.9.0",
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.5",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.16",
     "vue-apollo": "^3.0.0-beta.30",
